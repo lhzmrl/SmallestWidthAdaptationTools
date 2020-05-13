@@ -1,0 +1,2 @@
+# SmallestWidthAdaptationTools
+最小宽度限定符方案文件生成辅助及现有布局文件转换工具
