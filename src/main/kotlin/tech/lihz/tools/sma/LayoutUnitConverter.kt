@@ -127,8 +127,8 @@ class LayoutUnitConverter(private val sourceLayoutPath: String, private val targ
     }
 
     private fun tryConvertUnit(name: String, value: String): String {
-        val suit: String? = SUIT_ATTR_NAMES.find {
-            it === name
+        SUIT_ATTR_NAMES.find {
+            it == name
         } ?: return value
         if (!value.endsWith("dp") && !value.endsWith("sp") && !value.endsWith("px") && !value.endsWith("dip")) {
             return value
